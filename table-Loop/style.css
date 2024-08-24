@@ -1,0 +1,17 @@
+#heading{
+    text-align: center;
+    margin-top: 50px;
+}
+#multiplication-table{
+    border: 1px solid black;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 50px;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    margin-top: 30px;
+  
+
+}
