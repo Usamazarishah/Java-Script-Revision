@@ -1,39 +1,98 @@
-
-.usama{
-    width: 50px;
-    height: 20px;
-    background-color: rgb(13, 202, 139);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling for main container */
 .container {
-    max-width: 600px;
-    margin: 0 auto;
+    background-color: white;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
 }
 
-input {
+h3 {
+    text-align: center;
     margin-bottom: 10px;
-    display: block;
+    color: #333;
 }
 
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
+/* Table styling */
 table {
     width: 100%;
     margin-bottom: 20px;
+    border-collapse: collapse;
 }
 
 td {
-    padding: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #6c757d;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Add some spacing between matrix blocks */
+table + table {
+    margin-top: 10px;
+}
+
+/* For responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+    input[type="number"] {
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
 }
