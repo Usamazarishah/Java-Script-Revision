@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>API</h1>
-    <form id="form">
-        <input type="text" placeholder="Enter Your Name">
-        <button>Submit</button>
-    </form>
-    <div id="main_div">
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" >
-        <p>Name:</p>
-        <p>Repos:</p>
-        <a href="">Profile link</a>
+    <div class="container">
+        <form id="form">
+            <h1>GitHub Profile Search</h1>
+            <input type="text" placeholder="Enter Your Name">
+            <button type="submit">Search</button>
+        </form>
+        <div id="main_div" class="profile-card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="User Avatar">
+            <p></p>
+            <p></p>
+            <a href="" >Profile Link</a>
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script type="module" src="app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
