@@ -1,0 +1,60 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #74ebd5, #ACB6E5); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    max-width: 400px;
+    width: 100%;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #3498db; /* Light blue text */
+    font-size: 18px;
+    padding: 12px 20px;
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #ffffff; /* White background for links */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow around the links */
+}
+
+ul li a:hover {
+    background-color: #3498db; /* Blue background on hover */
+    color: white;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    ul {
+        max-width: 90%;
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+}
