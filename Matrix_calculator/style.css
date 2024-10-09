@@ -13,7 +13,6 @@ body {
     height: 100vh;
 }
 
-/* Styling for main container */
 .container {
     background-color: white;
     padding: 20px;
@@ -29,7 +28,6 @@ h3 {
     color: #333;
 }
 
-/* Table styling */
 table {
     width: 100%;
     margin-bottom: 20px;
@@ -50,7 +48,6 @@ input[type="number"] {
     font-size: 1em;
 }
 
-/* Button styling */
 button {
     width: 100%;
     padding: 10px;
@@ -72,12 +69,10 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Add some spacing between matrix blocks */
 table + table {
     margin-top: 10px;
 }
 
-/* For responsiveness */
 @media (max-width: 600px) {
     .container {
         padding: 10px;
