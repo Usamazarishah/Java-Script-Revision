@@ -13,7 +13,7 @@ form.addEventListener('submit', async(event)=>{
     
     try{
         const response = await axios (API_URL); 
-        console.log(response);
+        // console.log(response);
 
         profile_img.src = response.data.avatar_url;
         userName.innerText = `Name: ${response.data.name}`;
@@ -21,11 +21,13 @@ form.addEventListener('submit', async(event)=>{
         profile_link.href = response.data.html_url;
 
     }catch(err){
-        console.log("error>",err.response.data.message);
-        // alert('User not found!');
+        // console.log("error>",err.response.data.message);
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+          });
     }
-    
-    console.log('form is submitted',value);
-}
-)
-
+    event.target.reset();
+    // console.log('form is submitted',value);
+});

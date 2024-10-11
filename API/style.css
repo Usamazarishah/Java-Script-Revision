@@ -11,8 +11,12 @@ body {
 }
 
 .container {
-    width: 400px;
+    width: 450px;
     text-align: center;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #form {
