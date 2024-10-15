@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 88, 0.507);
+}
+.container{
+    background-color: white;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
+}
+.timer_display{
+    position: relative;
+    width: 92%;
+    background-color: white;
+    box-shadow: 0 0 15px black;
+    left: 4%;
+    font-size: 30px;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.buttons{
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons >button {
+    width: 120px;
+    height: 45px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.buttons >button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+} 
