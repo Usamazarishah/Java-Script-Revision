@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+.container{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 30%;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+.container >h1{
+    text-align: center;
+}
+#todo_form{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 5px;
+}
+#todo_form >input{
+    outline: none;
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 20px;
+
+}
+#todo_form >input::placeholder{
+    font-size: 18px;
+}
+
+
+#todo_form >button{
+    background-color: blue;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}

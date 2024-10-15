@@ -1,26 +1,30 @@
 const todo_form =document.querySelector('#todo_form')
 const list =document.querySelector('#list')
-
+//todo array
+var todo_array = ["apple","mango","orange","banana"]
+if(!localStorage.getItem("key")){
+    localStorage.setItem('key',JSON.stringify(todo_array))
+}
+var todo_array = JSON.parse(localStorage.getItem("key"))
 todo_form.addEventListener('submit',(event)=>{
     event.preventDefault()
+    var array = JSON.parse(localStorage.getItem("key"))
+
     let value = event.target.children[0].value
+    array.push(value)
     // console.log(value);
+    localStorage.setItem("key",JSON.stringify(array))
+    list.innerHTML += `<li> ${value} </li>`
 
-    localStorage.setItem("user_value",(value))
-    value = localStorage.getItem("user_value")
-    //  console.log(value);
-    list.innerHTML += `<li>${value} </li>`
-
+    //for clear the input
     event.target.reset()
 })
+// list.innerHTML += `<li> ${localStorage.getItem("key")} </li>`
 
-//todo array
-const todo_array = ["apple","mango","orange","banana"]
-
-//localstorage 
+// localstorage 
 // localStorage.setItem('key',JSON.stringify(todo_array))
-// const todo_array = JSON.parse(localStorage.getItem("key"))
-console.log(todo_array);
+// var todo_array = JSON.parse(localStorage.getItem("key"))
+// console.log(todo_array);
 
 //using loop print array
 // for(var i=0; i < todo_array.length; i++){
@@ -32,6 +36,6 @@ todo_array.map((value)=>{
     list.innerHTML += `<li> ${value} </li>`
 })
 
-list.innerHTML += `<li> ${localStorage.getItem("user_value")} </li>`
-todo_array.push(value)
+
+
 
