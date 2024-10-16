@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: aquamarine;
+    background-color:  rgba(41, 103, 105, 0.795);
 }
 .container{
     position: absolute;
@@ -17,27 +17,26 @@ body{
 }
 #todo_form{
     display: flex;
-    /* flex-direction: column; */
-    gap: 5px;
+    border: 2px solid rgb(42, 186, 230);
+    border-radius: 5px;
 }
 #todo_form >input{
     outline: none;
-    border: 1px solid black;
     padding: 10px 30px;
-    border-radius: 20px;
-
+    border: none;
 }
 #todo_form >input::placeholder{
     font-size: 18px;
+    /* margin-left: 100px;/ */
 }
 
-
 #todo_form >button{
-    background-color: blue;
+    background-color: rgba(0, 38, 255, 0.973);
     outline: none;
     border: none;
     color: white;
-    padding: 0px 10px;
-    border-radius: 5px;
+    padding: 0px 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     font-size: 18px;
 }
