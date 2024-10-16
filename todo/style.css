@@ -27,7 +27,6 @@ body{
 }
 #todo_form >input::placeholder{
     font-size: 18px;
-    /* margin-left: 100px;/ */
 }
 
 #todo_form >button{
@@ -35,8 +34,8 @@ body{
     outline: none;
     border: none;
     color: white;
-    padding: 0px 15px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    padding: 0px 16px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     font-size: 18px;
 }
